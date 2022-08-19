@@ -1,7 +1,7 @@
 /// <summary>
-/// Table Free Gift (ID 50101)
+/// Table Free Gift (ID 50301)
 /// </summary>
-table 50101 "KNH Free Gift"
+table 50301 "KNH Free Gift"
 {
     DataClassification = CustomerContent;
     DrillDownPageId = "KNH Free Gift List";

@@ -1,7 +1,7 @@
 /// <summary>
-/// Table Customer Category (ID 50100)
+/// Table Customer Category (ID 50300)
 /// </summary>
-table 50100 "KNH Customer Category"
+table 50300 "KNH Customer Category"
 {
     DrillDownPageId = "KNH Customer Category List";
     LookupPageId = "KNH Customer Category List";

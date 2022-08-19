@@ -1,13 +1,13 @@
 /// <summary>
-/// Report Item Ledger Entry Analysis (ID 50001)
+/// Report Item Ledger Entry Analysis (ID 50301)
 /// </summary>
-report 50101 "Item Ledger Entry Analysis"
+report 50301 "Item Ledger Entry Analysis"
 {
     ApplicationArea = All;
     Caption = 'Item Ledger Entry Analysis';
     UsageCategory = ReportsAndAnalysis;
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/rdlc/50101ItemLedgerEntryAnalysis.rdlc';
+    RDLCLayout = './src/report/rdlc/50301ItemLedgerEntryAnalysis.rdlc';
     UseRequestPage = true;
 
     dataset

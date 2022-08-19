@@ -1,7 +1,7 @@
 /// <summary>
-/// Query CustomerOverview (ID 50000)
+/// Query CustomerOverview (ID 50300)
 /// </summary>
-query 50100 "KNH Customer Overview"
+query 50300 "KNH Customer Overview"
 {
     Caption = 'Customer Overview';
     QueryType = Normal;

@@ -1,7 +1,7 @@
 /// <summary>
-/// Page Free Gift List (ID 50101)
+/// Page Free Gift List (ID 50301)
 /// </summary>
-page 50101 "KNH Free Gift List"
+page 50301 "KNH Free Gift List"
 {
     PageType = List;
     SourceTable = "KNH Free Gift";

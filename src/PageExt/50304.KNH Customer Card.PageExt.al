@@ -1,7 +1,7 @@
 /// <summary>
 /// Page "Customer Card Extension" extends Customer Card.
 /// </summary>
-pageextension 50104 "KNH Customer Card" extends "Customer Card"
+pageextension 50304 "KNH Customer Card" extends "Customer Card"
 {
     layout
     {

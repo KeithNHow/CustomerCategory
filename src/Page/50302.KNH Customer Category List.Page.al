@@ -1,7 +1,7 @@
 /// <summary>
-/// Page Customer Category List (ID 50102)
+/// Page Customer Category List (ID 50302)
 /// </summary>
-page 50102 "KNH Customer Category List"
+page 50302 "KNH Customer Category List"
 {
     PageType = List;
     SourceTable = "KNH Customer Category";

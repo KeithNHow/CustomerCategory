@@ -1,7 +1,7 @@
 /// <summary>
-/// Report Ext. KNH Customer (ID 50000) extends Report Customer - Top 10 List.
+/// Report Ext. KNH Customer (ID 50300) extends Report Customer - Top 10 List.
 /// </summary>
-reportextension 50100 "KNH Customer" extends "Customer - Top 10 List"
+reportextension 50300 "KNH Customer" extends "Customer - Top 10 List"
 {
     dataset
     {

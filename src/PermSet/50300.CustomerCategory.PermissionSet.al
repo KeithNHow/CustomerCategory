@@ -1,7 +1,7 @@
 /// <summary>
-/// Unknown "CustomerCategory" (ID 50100).
+/// Unknown "CustomerCategory" (ID 50300).
 /// </summary>
-permissionset 50100 CustomerCategory
+permissionset 50300 CustomerCategory
 {
     Assignable = true;
     Caption = 'Customer Category', MaxLength = 30;

@@ -1,7 +1,7 @@
 /// <summary>
-/// TableExtension Item Ledger Entry Ext (ID 50101) extends Record Item Ledger Entry
+/// TableExtension Item Ledger Entry Ext (ID 50301) extends Record Item Ledger Entry
 /// </summary>
-tableextension 50101 "KNH Item Ledger Entry" extends "Item Ledger Entry"
+tableextension 50301 "KNH Item Ledger Entry" extends "Item Ledger Entry"
 {
     fields
     {

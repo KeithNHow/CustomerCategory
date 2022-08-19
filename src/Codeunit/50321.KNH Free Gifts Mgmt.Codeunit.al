@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit FreeGiftsMgmt (ID 50121)
+/// Codeunit FreeGiftsMgmt (ID 50321)
 /// </summary>
-codeunit 50121 "KNH Free Gifts Mgmt"
+codeunit 50321 "KNH Free Gifts Mgmt"
 {
     /// <summary>
     /// Event Subs - Add free gift code after validation of Quatity field in Sales Line table, and raise integration events before and after inserting Sles Line 

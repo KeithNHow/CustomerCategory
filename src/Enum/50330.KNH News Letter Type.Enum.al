@@ -1,7 +1,7 @@
 /// <summary>
-/// Enum NewsLetterType (ID 50130)
+/// Enum NewsLetterType (ID 50330)
 /// </summary>
-enum 50130 "KNH News Letter Type"
+enum 50330 "KNH News Letter Type"
 {
     Extensible = true;
 

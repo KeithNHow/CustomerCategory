@@ -1,7 +1,7 @@
 /// <summary>
-/// PageExtension KNH (ID 50001)
+/// PageExtension KNH (ID 50301)
 /// </summary>
-pageextension 50101 "KNH Item" extends "Item List"
+pageextension 50301 "KNH Item" extends "Item List"
 {
 
     actions

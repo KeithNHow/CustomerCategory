@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit Customer Management (ID 50120)
+/// Codeunit Customer Management (ID 50320)
 /// </summary>
-codeunit 50120 "KNH Customer Category Mgmt"
+codeunit 50320 "KNH Customer Category Mgmt"
 {
     trigger OnRun();
     begin

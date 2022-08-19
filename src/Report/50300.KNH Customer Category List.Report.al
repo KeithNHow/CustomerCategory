@@ -1,10 +1,10 @@
 /// <summary>
-/// Report CustomerCategoryList (ID 50100)
+/// Report CustomerCategoryList (ID 50300)
 /// </summary>
-report 50100 "KNH Customer Category List"
+report 50300 "KNH Customer Category List"
 {
     //DefaultLayout = Word
-    RDLCLayout = './src/report/layouts\50100.CustomerCategoryList.rdlc';
+    RDLCLayout = './src/report/layouts\50300.CustomerCategoryList.rdlc';
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Customer Category List';

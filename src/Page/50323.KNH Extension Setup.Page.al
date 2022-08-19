@@ -1,7 +1,7 @@
 /// <summary>
-/// Page ExtensionSetupPKT (ID 50123)
+/// Page ExtensionSetupPKT (ID 50323)
 /// </summary>
-page 50123 "KNH Extension Setup"
+page 50323 "KNH Extension Setup"
 {
     Caption = 'Extension Setup';
     PageType = Card;

@@ -1,7 +1,7 @@
 /// <summary>
-/// Page CustomerCategoryCardPKT (ID 50126)
+/// Page CustomerCategoryCardPKT (ID 50326)
 /// </summary>
-page 50126 "KNH Customer Category Card"
+page 50326 "KNH Customer Category Card"
 {
 
     Caption = 'Customer Category Card';

@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit Event Subscriptions (ID 50100)
+/// Codeunit Event Subscriptions (ID 50300)
 /// </summary>
-codeunit 50117 "KNH Event Subscriptions"
+codeunit 50317 "KNH Event Subscriptions"
 {
     EventSubscriberInstance = staticAutomatic;
 

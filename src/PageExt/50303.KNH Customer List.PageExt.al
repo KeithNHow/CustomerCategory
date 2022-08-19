@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension Customer List Extension (ID 50103) extends Record Customer List
 /// </summary>
-pageextension 50103 "KNH Customer List" extends "Customer List"
+pageextension 50303 "KNH Customer List" extends "Customer List"
 {
     actions
     {
