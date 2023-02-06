@@ -1,0 +1,29 @@
+{
+  "id": "fcb76029-2cd7-4fdd-9afe-49e0ec02e4c9",
+  "name": "Customer Category",
+  "publisher": "Keith How",
+  "version": "1.0.0.2",
+  "brief": "Customer Category",
+  "description": "Customer Category",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./logo/KNH.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50300,
+      "to": 50399
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0"
+}
