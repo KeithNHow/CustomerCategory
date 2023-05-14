@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit Event Subscriptions (ID 50300)
+/// Codeunit KNH Event Subscriptions (ID 50300)
 /// </summary>
-codeunit 50317 "KNH Event Subscriptions"
+codeunit 50317 "KNH EventSubscriptions"
 {
     EventSubscriberInstance = staticAutomatic;
 
@@ -28,7 +28,7 @@ codeunit 50317 "KNH Event Subscriptions"
     /// CheckAddrLine called from publishers codeunit
     /// </summary>
     /// <param name="Line">Text[100].</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNH Event Publishers", 'OnAddrLineChanged', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNH EventPublishers", 'OnAddrLineChanged', '', true, true)]
     local procedure CheckAddrLineOnAddrLineChanged(Line: Text[100])
     var
         newLabelMsg: Label 'Cannot use a plus sign (+) in the address [';
@@ -41,7 +41,7 @@ codeunit 50317 "KNH Event Subscriptions"
     /// MinOrderQty called from publishers codeunit
     /// </summary>
     /// <param name="Qty">Decimal.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNH Event Publishers", 'MinOrderQty', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNH EventPublishers", 'MinOrderQty', '', true, true)]
     local procedure CustomerMinOrderQty(Qty: Decimal)
     var
         QtyMessageMsg: Label 'Sorry but a quantity of %1 is an insufficient quantity for a free gift.', Comment = '%1 = Quantity';

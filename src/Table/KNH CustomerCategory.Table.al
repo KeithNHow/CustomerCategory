@@ -1,15 +1,15 @@
 /// <summary>
-/// Table Customer Category (ID 50300)
+/// Table KNH Customer Category (ID 50300)
 /// </summary>
-table 50300 "KNH Customer Category"
+table 50300 "KNH CustomerCategory"
 {
-    DrillDownPageId = "KNH Customer Category List";
-    LookupPageId = "KNH Customer Category List";
+    DrillDownPageId = "KNH CustomerCategoryList";
+    LookupPageId = "KNH CustomerCategoryList";
     Caption = 'Customer Category';
 
     fields
     {
-        field(1; Code; Code[20])
+        field(1; "Code"; Code[20])
         {
             DataClassification = CustomerContent;
             Caption = 'No.';
@@ -27,7 +27,7 @@ table 50300 "KNH Customer Category"
             DataClassification = CustomerContent;
             Caption = 'Default';
         }
-        field(4; EnableNewsletter; Enum "KNH News Letter Type")
+        field(4; EnableNewsletter; Enum "KNH NewsLetterType")
         {
             DataClassification = CustomerContent;
             Caption = 'Enable Newsletter';
@@ -50,7 +50,7 @@ table 50300 "KNH Customer Category"
         field(10; TotalCustomersForCategory; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = count(Customer where("Customer Category Code" = field(Code)));
+            CalcFormula = count(Customer where("KNH Customer Category Code" = field(Code)));
             Caption = 'Total customers for category';
         }
     }

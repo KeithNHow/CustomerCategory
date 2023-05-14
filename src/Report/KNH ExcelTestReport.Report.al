@@ -1,7 +1,7 @@
 /// <summary>
 /// Report Excel Test Report (ID 50302).
 /// </summary>
-report 50302 "Excel Test Report"
+report 50302 "KNH ExcelTestReport"
 {
     ApplicationArea = Basic, Suite;
     Caption = 'Excel Test Report';
@@ -13,7 +13,7 @@ report 50302 "Excel Test Report"
     {
         dataitem(Customer; Customer)
         {
-            column("No_Cust"; "No.")
+            column(No_Cust; "No.")
             {
             }
             column(Name_Cust; Name)

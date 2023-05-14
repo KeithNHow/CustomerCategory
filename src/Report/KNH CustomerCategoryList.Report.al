@@ -1,19 +1,19 @@
 /// <summary>
 /// Report CustomerCategoryList (ID 50300)
 /// </summary>
-report 50300 "KNH Customer Category List"
+report 50300 "KNH CustomerCategoryList"
 {
     //DefaultLayout = Word
-    RDLCLayout = './src/report/layouts\50300.CustomerCategoryList.rdlc';
+    RDLCLayout = './src/report/layouts\KNHCustomerCategoryList.rdlc';
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Customer Category List';
 
     dataset
     {
-        dataitem(CustomerCategory; "KNH Customer Category")
+        dataitem(CustomerCategory; "KNH CustomerCategory")
         {
-            column(Code; Code)
+            column("Code"; Code)
             {
             }
             column(Description; Description)

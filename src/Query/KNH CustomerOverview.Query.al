@@ -1,11 +1,11 @@
 /// <summary>
-/// Query CustomerOverview (ID 50300)
+/// Query KNH Customer Overview (ID 50300)
 /// </summary>
-query 50300 "KNH Customer Overview"
+query 50300 "KNH CustomerOverview"
 {
     Caption = 'Customer Overview';
     QueryType = Normal;
-    OrderBy = Descending(BalanceLCY);
+    OrderBy = descending(BalanceLCY);
 
     elements
     {
@@ -45,7 +45,7 @@ query 50300 "KNH Customer Overview"
                 SqlJoinType = InnerJoin;
                 DataItemTableFilter = "Document Type" = FILTER(Invoice | "Credit Memo");
 
-                Column(DocumentType; "Document Type")
+                column(DocumentType; "Document Type")
                 {
                 }
                 column(DocumentNo; "Document No.")

@@ -1,25 +1,25 @@
 /// <summary>
-/// PageExtension Customer List Extension (ID 50103) extends Record Customer List
+/// PageExtension KNH Customer List Extension (ID 50103) extends Record Customer List
 /// </summary>
-pageextension 50303 "KNH Customer List" extends "Customer List"
+pageextension 50303 "KNH CustomerList" extends "Customer List"
 {
     actions
     {
         addlast(Processing)
         {
-            action("Assign Default Category")
+            action("KNH KNHAssign Default Category")
             {
                 Image = ChangeCustomer;
-                Promoted = True;
+                Promoted = true;
                 PromotedCategory = Process;
-                PromotedIsBig = True;
+                PromotedIsBig = true;
                 ApplicationArea = All;
                 Caption = 'Assign Default Category to all Customers';
                 Tooltip = 'Assigns the Default Category to all Customers';
 
                 trigger OnAction()
                 var
-                    CustManagement: Codeunit "KNH Customer Category Mgmt";
+                    CustManagement: Codeunit "KNH CustomerCategoryMgmt";
                 begin
                     CustManagement.AssignDefaultCategory();
                 end;
@@ -27,7 +27,7 @@ pageextension 50303 "KNH Customer List" extends "Customer List"
         }
         addlast(Reports)
         {
-            action("Customer Overview Query")
+            action("KNH KNHCustomer Overview Query")
             {
                 Image = Report2;
                 Promoted = True;
@@ -36,7 +36,7 @@ pageextension 50303 "KNH Customer List" extends "Customer List"
                 ApplicationArea = All;
                 Caption = 'Customer - Query Overview';
                 Tooltip = 'View list of records for customers and their ledger entries';
-                RunObject = query "KNH Customer Overview";
+                RunObject = query "KNH CustomerOverview";
             }
         }
     }
@@ -48,7 +48,7 @@ pageextension 50303 "KNH Customer List" extends "Customer List"
             view(CustomersWithoutCategory)
             {
                 Caption = 'Customers Without Category Assigned';
-                Filters = where("Customer Category Code" = filter(''));
+                Filters = where("KNH Customer Category Code" = filter(''));
             }
         }
     }

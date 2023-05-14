@@ -1,13 +1,13 @@
 /// <summary>
 /// Report Item Ledger Entry Analysis (ID 50301)
 /// </summary>
-report 50301 "Item Ledger Entry Analysis"
+report 50301 "KNH ItemLedgerEntryAnalysis"
 {
     ApplicationArea = All;
     Caption = 'Item Ledger Entry Analysis';
     UsageCategory = ReportsAndAnalysis;
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/Layouts/50301ItemLedgerEntryAnalysis.rdl';
+    RDLCLayout = './src/report/Layouts/KNHItemLedgerEntry.rdlc';
     UseRequestPage = true;
 
     dataset
@@ -23,7 +23,7 @@ report 50301 "Item Ledger Entry Analysis"
             column(EntryType; "Entry Type")
             {
             }
-            column(CustomerCategory; "Customer Category")
+            column(CustomerCategory; "KNH Customer Category")
             {
             }
             column(DocumentNo; "Document No.")

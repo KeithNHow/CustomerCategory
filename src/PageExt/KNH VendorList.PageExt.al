@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension KNH Vendor List (ID 50004) extends Record Vendor List.
 /// </summary>
-pageextension 50302 "KNH Vendor List" extends "Vendor List"
+pageextension 50302 "KNH VendorList" extends "Vendor List"
 {
     trigger OnOpenPage()
     var

@@ -1,16 +1,16 @@
 /// <summary>
 /// Report Ext. KNH Customer (ID 50300) extends Report Customer - Top 10 List.
 /// </summary>
-reportextension 50300 "KNH Customer" extends "Customer - Top 10 List"
+reportextension 50300 "KNHCustomer" extends "Customer - Top 10 List"
 {
     dataset
     {
         add(Integer)
         {
             // add existing field from base table to dataset
-            column(fromBaseTable; Customer.GLN) { }
+            column(KNHfromBaseTable; Customer.GLN) { }
             // add field from table extending Customer
-            column(fromBaseTableExt; Customer."Credit Rating") { }
+            column(KNHfromBaseTableExt; Customer."KNH Credit Rating") { }
         }
     }
 
@@ -21,7 +21,7 @@ reportextension 50300 "KNH Customer" extends "Customer - Top 10 List"
             addafter(Show)
             {
                 // add field from table extension to request page
-                field(fromBaseTableExt; Customer."Credit Rating") { }
+                field(KNHfromBaseTableExt; Customer."KNH Credit Rating") { }
             }
         }
     }

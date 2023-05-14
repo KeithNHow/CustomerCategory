@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit Acora "Publishers" (ID 50315).
+/// Codeunit KNH Event Publishers (ID 50315).
 /// </summary>
-codeunit 50315 "KNH Event Publishers"
+codeunit 50315 "KNH EventPublishers"
 {
     /// <summary>
     /// OnAddrLineChanged called from Customer Card page, calls integration event in event subs codeunit

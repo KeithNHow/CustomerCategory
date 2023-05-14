@@ -1,7 +1,7 @@
 /// <summary>
 /// Page CustomerCategoryCardPKT (ID 50326)
 /// </summary>
-page 50326 "KNH Customer Category Card"
+page 50326 "KNH CustomerCategoryCard"
 {
 
     Caption = 'Customer Category Card';
@@ -9,7 +9,7 @@ page 50326 "KNH Customer Category Card"
     UsageCategory = Lists;
     ApplicationArea = Basic, Suite;
     RefreshOnActivate = true;
-    SourceTable = "KNH Customer Category";
+    SourceTable = "KNH CustomerCategory";
 
     layout
     {
@@ -17,7 +17,7 @@ page 50326 "KNH Customer Category Card"
         {
             group(General)
             {
-                field(Code; Rec.Code)
+                field("Code"; Rec.Code)
                 {
                     ToolTip = 'Specifies the value of the No. field';
                     ApplicationArea = All;

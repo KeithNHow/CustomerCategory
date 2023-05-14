@@ -1,7 +1,7 @@
 /// <summary>
-/// ReportExt "MyExtContactList" (ID 50302) extends Record Contact - List.
+/// ReportExt "KNHExtContactList" (ID 50302) extends Record Contact - List.
 /// </summary>
-reportextension 50302 MyExtContactList extends "Contact - List"
+reportextension 50302 KNHExtContactList extends "Contact - List"
 {
     rendering
     {

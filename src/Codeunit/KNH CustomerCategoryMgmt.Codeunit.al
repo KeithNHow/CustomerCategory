@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit Customer Management (ID 50320)
+/// Codeunit KNH Customer Management (ID 50320)
 /// </summary>
-codeunit 50320 "KNH Customer Category Mgmt"
+codeunit 50320 "KNH CustomerCategoryMgmt"
 {
     trigger OnRun();
     begin
@@ -14,13 +14,13 @@ codeunit 50320 "KNH Customer Category Mgmt"
     procedure AssignDefaultCategory(CustomerCode: Code[20])
     var
         Customer: Record Customer;
-        KNHCustomerCategory: Record "KNH Customer Category";
+        KNHCustomerCategory: Record "KNH CustomerCategory";
     begin
         Customer.Get(CustomerCode);
         KNHCustomerCategory.SetRange(Default, true);
         if KNHCustomerCategory.FindSet() then
             repeat
-                Customer."Customer Category Code" := KNHCustomerCategory.Code;
+                Customer."KNH Customer Category Code" := KNHCustomerCategory.Code;
                 Customer.Modify();
             until KNHCustomerCategory.Next() = 0;
     end;
@@ -31,13 +31,13 @@ codeunit 50320 "KNH Customer Category Mgmt"
     procedure AssignDefaultCategory()
     var
         Customer: Record Customer;
-        KNHCustomerCategory: Record "KNH Customer Category";
+        KNHCustomerCategory: Record "KNH CustomerCategory";
     begin
         KNHCustomerCategory.SetRange(Default, true);
         if KNHCustomerCategory.FindFirst() then
             if Customer.FindSet(true, true) then
                 repeat
-                    Customer."Customer Category Code" := KNHCustomerCategory.Code;
+                    Customer."KNH Customer Category Code" := KNHCustomerCategory.Code;
                     Customer.Modify();
                 until Customer.Next() = 0;
     end;
@@ -47,7 +47,7 @@ codeunit 50320 "KNH Customer Category Mgmt"
     /// </summary>
     procedure CreateDefaultCategory()
     var
-        KNHCustomerCategory: Record "KNH Customer Category";
+        KNHCustomerCategory: Record "KNH CustomerCategory";
     begin
         KNHCustomerCategory.Code := 'DEFAULT';
         KNHCustomerCategory.Description := 'Default Customer Category';
@@ -63,7 +63,7 @@ codeunit 50320 "KNH Customer Category Mgmt"
     var
         Customer: Record Customer;
     begin
-        Customer.SetRange("Customer Category Code", '');
+        Customer.SetRange("KNH Customer Category Code", '');
         exit(Customer.Count());
     end;
 }

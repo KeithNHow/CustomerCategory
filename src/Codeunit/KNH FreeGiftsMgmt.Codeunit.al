@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit FreeGiftsMgmt (ID 50321)
+/// Codeunit KNH Free Gifts Mgmt (ID 50321)
 /// </summary>
-codeunit 50321 "KNH Free Gifts Mgmt"
+codeunit 50321 "KNH FreeGiftsMgmt"
 {
     /// <summary>
     /// Event Subs - Add free gift code after validation of Quatity field in Sales Line table, and raise integration events before and after inserting Sles Line 
@@ -10,12 +10,12 @@ codeunit 50321 "KNH Free Gifts Mgmt"
     [EventSubscriber(ObjectType::Table, 37, 'OnAfterValidateEvent', 'Quantity', false, false)]
     local procedure AddFreeGift(var Rec: Record "Sales Line")
     var
-        FreeGift: Record "KNH Free Gift";
+        FreeGift: Record "KNH FreeGift";
         SalesLine: Record "Sales Line";
         Customer: Record Customer;
     begin
         if (Rec.Type = Rec.Type::Item) and (Customer.Get(Rec."Sell-to Customer No.")) then
-            if FreeGift.Get(Customer."Customer Category Code", Rec."No.") and
+            if FreeGift.Get(Customer."KNH Customer Category Code", Rec."No.") and
                (rec.Quantity > FreeGift.MinimumOrderQuantity)
             then begin
                 OnBeforeFreeGiftSalesLineAdded(Rec); //call pub method
@@ -55,7 +55,7 @@ codeunit 50321 "KNH Free Gifts Mgmt"
     begin
         if Rec."Entry Type" = Rec."Entry Type"::Sale then
             if Customer.Get(Rec."Source No.") then begin
-                Rec."Customer Category" := Customer."Customer Category Code";
+                Rec."KNH Customer Category" := Customer."KNH Customer Category Code";
                 Rec.Modify();
             end;
     end;

@@ -1,13 +1,13 @@
 /// <summary>
-/// Page "Customer Card Extension" extends Customer Card.
+/// Page "KNH Customer Card Extension" extends Customer Card.
 /// </summary>
-pageextension 50304 "KNH Customer Card" extends "Customer Card"
+pageextension 50304 "KNH CustomerCard" extends "Customer Card"
 {
     layout
     {
         addlast(General)
         {
-            field("Customer Category"; Rec."Customer Category Code")
+            field("KNH Customer Category"; Rec."KNH Customer Category Code")
             {
                 ToolTip = 'Customer Category';
                 ApplicationArea = All;
@@ -32,7 +32,7 @@ pageextension 50304 "KNH Customer Card" extends "Customer Card"
     {
         addlast(Processing)
         {
-            action("Assign default category")
+            action("KNH KNHAssign default category")
             {
                 Image = ChangeCustomer;
                 Promoted = true;
@@ -44,7 +44,7 @@ pageextension 50304 "KNH Customer Card" extends "Customer Card"
 
                 trigger OnAction();
                 var
-                    CustMgmt: Codeunit "KNH Customer Category Mgmt";
+                    CustMgmt: Codeunit "KNH CustomerCategoryMgmt";
                 begin
                     CustMgmt.AssignDefaultCategory(Rec."No.");
                 end;
@@ -53,7 +53,7 @@ pageextension 50304 "KNH Customer Card" extends "Customer Card"
     }
 
     var
-        KNHEventPublishers: Codeunit "KNH Event Publishers";
+        KNHEventPublishers: Codeunit "KNH EventPublishers";
 
     trigger OnClosePage()
     begin

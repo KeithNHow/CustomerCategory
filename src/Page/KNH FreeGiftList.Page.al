@@ -1,10 +1,10 @@
 /// <summary>
-/// Page Free Gift List (ID 50301)
+/// Page KNH Free Gift List (ID 50301)
 /// </summary>
-page 50301 "KNH Free Gift List"
+page 50301 "KNH FreeGiftList"
 {
     PageType = List;
-    SourceTable = "KNH Free Gift";
+    SourceTable = "KNH FreeGift";
     UsageCategory = Lists;
     ApplicationArea = Basic, Suite;
     Caption = 'Free Gift List';
