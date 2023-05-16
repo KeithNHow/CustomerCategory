@@ -43,7 +43,7 @@ query 50300 "KNHCustomerOverview"
             {
                 DataItemLink = "Customer No." = Customer."No.";
                 SqlJoinType = InnerJoin;
-                DataItemTableFilter = "Document Type" = FILTER(Invoice | "Credit Memo");
+                DataItemTableFilter = "Document Type" = filter(Invoice | "Credit Memo");
 
                 column(DocumentType; "Document Type")
                 {
