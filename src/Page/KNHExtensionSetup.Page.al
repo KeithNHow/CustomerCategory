@@ -1,13 +1,13 @@
 /// <summary>
 /// Page KNH Extension Setup (ID 50323)
 /// </summary>
-page 50323 "KNH ExtensionSetup"
+page 50323 "KNHExtensionSetup"
 {
     Caption = 'Extension Setup';
     ApplicationArea = Basic, Suite;
     PageType = Card;
     UsageCategory = Administration;
-    SourceTable = "KNH ExtensionSetup";
+    SourceTable = "KNHExtensionSetup";
 
     layout
     {

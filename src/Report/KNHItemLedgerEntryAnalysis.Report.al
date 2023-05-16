@@ -1,7 +1,7 @@
 /// <summary>
 /// Report Item Ledger Entry Analysis (ID 50301)
 /// </summary>
-report 50301 "KNH ItemLedgerEntryAnalysis"
+report 50301 "KNHItemLedgerEntryAnalysis"
 {
     ApplicationArea = All;
     Caption = 'Item Ledger Entry Analysis';

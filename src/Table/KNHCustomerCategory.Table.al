@@ -1,10 +1,10 @@
 /// <summary>
 /// Table KNH Customer Category (ID 50300)
 /// </summary>
-table 50300 "KNH CustomerCategory"
+table 50300 "KNHCustomerCategory"
 {
-    DrillDownPageId = "KNH CustomerCategoryList";
-    LookupPageId = "KNH CustomerCategoryList";
+    DrillDownPageId = "KNHCustomerCategoryList";
+    LookupPageId = "KNHCustomerCategoryList";
     Caption = 'Customer Category';
 
     fields
@@ -27,7 +27,7 @@ table 50300 "KNH CustomerCategory"
             DataClassification = CustomerContent;
             Caption = 'Default';
         }
-        field(4; EnableNewsletter; Enum "KNH NewsLetterType")
+        field(4; EnableNewsletter; Enum "KNHNewsLetterType")
         {
             DataClassification = CustomerContent;
             Caption = 'Enable Newsletter';

@@ -1,7 +1,7 @@
 /// <summary>
 /// Table KNH Packet Extension Setup (ID 50300)
 /// </summary>
-table 50325 "KNH ExtensionSetup"
+table 50325 "KNHExtensionSetup"
 {
     Caption = 'PacketExtensionSetup';
     DataClassification = ToBeClassified;

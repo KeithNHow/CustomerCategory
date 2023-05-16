@@ -24,7 +24,7 @@
         "generateReportLayout": true
     },
 
-    "CRS.ObjectNamePrefix": "KNH ",
+    "CRS.ObjectNamePrefix": "KNH",
     "CRS.DisableDefaultAlSnippets": false,
     "CRS.OnSaveAlFileAction": "Rename",
     "CRS.FileNamePattern": "<ObjectName>.<ObjectTypeShortPascalCase>.al",

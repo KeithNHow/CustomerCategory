@@ -1,7 +1,7 @@
 /// <summary>
 /// Query KNH Customer Overview (ID 50300)
 /// </summary>
-query 50300 "KNH CustomerOverview"
+query 50300 "KNHCustomerOverview"
 {
     Caption = 'Customer Overview';
     QueryType = Normal;

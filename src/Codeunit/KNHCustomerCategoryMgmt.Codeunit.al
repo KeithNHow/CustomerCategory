@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH Customer Management (ID 50320)
 /// </summary>
-codeunit 50320 "KNH CustomerCategoryMgmt"
+codeunit 50320 "KNHCustomerCategoryMgmt"
 {
     trigger OnRun();
     begin
@@ -14,7 +14,7 @@ codeunit 50320 "KNH CustomerCategoryMgmt"
     procedure AssignDefaultCategory(CustomerCode: Code[20])
     var
         Customer: Record Customer;
-        KNHCustomerCategory: Record "KNH CustomerCategory";
+        KNHCustomerCategory: Record "KNHCustomerCategory";
     begin
         Customer.Get(CustomerCode);
         KNHCustomerCategory.SetRange(Default, true);
@@ -31,7 +31,7 @@ codeunit 50320 "KNH CustomerCategoryMgmt"
     procedure AssignDefaultCategory()
     var
         Customer: Record Customer;
-        KNHCustomerCategory: Record "KNH CustomerCategory";
+        KNHCustomerCategory: Record "KNHCustomerCategory";
     begin
         KNHCustomerCategory.SetRange(Default, true);
         if KNHCustomerCategory.FindFirst() then
@@ -47,7 +47,7 @@ codeunit 50320 "KNH CustomerCategoryMgmt"
     /// </summary>
     procedure CreateDefaultCategory()
     var
-        KNHCustomerCategory: Record "KNH CustomerCategory";
+        KNHCustomerCategory: Record "KNHCustomerCategory";
     begin
         KNHCustomerCategory.Code := 'DEFAULT';
         KNHCustomerCategory.Description := 'Default Customer Category';

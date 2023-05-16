@@ -1,7 +1,7 @@
 /// <summary>
 /// Page "KNH Customer Card Extension" extends Customer Card.
 /// </summary>
-pageextension 50304 "KNH CustomerCard" extends "Customer Card"
+pageextension 50304 "KNHCustomerCard" extends "Customer Card"
 {
     layout
     {
@@ -44,7 +44,7 @@ pageextension 50304 "KNH CustomerCard" extends "Customer Card"
 
                 trigger OnAction();
                 var
-                    CustMgmt: Codeunit "KNH CustomerCategoryMgmt";
+                    CustMgmt: Codeunit "KNHCustomerCategoryMgmt";
                 begin
                     CustMgmt.AssignDefaultCategory(Rec."No.");
                 end;
@@ -53,7 +53,7 @@ pageextension 50304 "KNH CustomerCard" extends "Customer Card"
     }
 
     var
-        KNHEventPublishers: Codeunit "KNH EventPublishers";
+        KNHEventPublishers: Codeunit "KNHEventPublishers";
 
     trigger OnClosePage()
     begin

@@ -1,18 +1,18 @@
 /// <summary>
 /// Table KNH Free Gift (ID 50301)
 /// </summary>
-table 50301 "KNH FreeGift"
+table 50301 "KNHFreeGift"
 {
     DataClassification = CustomerContent;
-    DrillDownPageId = "KNH FreeGiftList";
-    LookupPageId = "KNH FreeGiftList";
+    DrillDownPageId = "KNHFreeGiftList";
+    LookupPageId = "KNHFreeGiftList";
     Caption = 'Free Gifts';
     fields
     {
         field(1; CustomerCategoryCode; Code[20])
         {
             DataClassification = CustomerContent;
-            TableRelation = "KNH CustomerCategory";
+            TableRelation = "KNHCustomerCategory";
             Caption = 'Customer Category Code';
         }
         field(2; ItemNo; Code[20])
@@ -29,7 +29,7 @@ table 50301 "KNH FreeGift"
             trigger OnValidate()
 
             var
-                Publisher: Codeunit "KNH EventPublishers";
+                Publisher: Codeunit "KNHEventPublishers";
             begin
                 Publisher.MinOrderQty(MinimumOrderQuantity);
             end;

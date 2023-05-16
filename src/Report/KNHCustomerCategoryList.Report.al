@@ -1,7 +1,7 @@
 /// <summary>
 /// Report CustomerCategoryList (ID 50300)
 /// </summary>
-report 50300 "KNH CustomerCategoryList"
+report 50300 "KNHCustomerCategoryList"
 {
     //DefaultLayout = Word
     RDLCLayout = './src/report/layouts\KNHCustomerCategoryList.rdlc';
@@ -11,7 +11,7 @@ report 50300 "KNH CustomerCategoryList"
 
     dataset
     {
-        dataitem(CustomerCategory; "KNH CustomerCategory")
+        dataitem(CustomerCategory; "KNHCustomerCategory")
         {
             column("Code"; Code)
             {

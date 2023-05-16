@@ -1,7 +1,7 @@
 /// <summary>
 /// Page CustomerCategoryCardPKT (ID 50326)
 /// </summary>
-page 50326 "KNH CustomerCategoryCard"
+page 50326 "KNHCustomerCategoryCard"
 {
 
     Caption = 'Customer Category Card';
@@ -9,7 +9,7 @@ page 50326 "KNH CustomerCategoryCard"
     UsageCategory = Lists;
     ApplicationArea = Basic, Suite;
     RefreshOnActivate = true;
-    SourceTable = "KNH CustomerCategory";
+    SourceTable = "KNHCustomerCategory";
 
     layout
     {

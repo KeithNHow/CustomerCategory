@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH Free Gifts Mgmt (ID 50321)
 /// </summary>
-codeunit 50321 "KNH FreeGiftsMgmt"
+codeunit 50321 "KNHFreeGiftsMgmt"
 {
     /// <summary>
     /// Event Subs - Add free gift code after validation of Quatity field in Sales Line table, and raise integration events before and after inserting Sles Line 
@@ -10,7 +10,7 @@ codeunit 50321 "KNH FreeGiftsMgmt"
     [EventSubscriber(ObjectType::Table, 37, 'OnAfterValidateEvent', 'Quantity', false, false)]
     local procedure AddFreeGift(var Rec: Record "Sales Line")
     var
-        FreeGift: Record "KNH FreeGift";
+        FreeGift: Record "KNHFreeGift";
         SalesLine: Record "Sales Line";
         Customer: Record Customer;
     begin

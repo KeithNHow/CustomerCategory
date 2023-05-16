@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension KNH Item (ID 50301)
 /// </summary>
-pageextension 50301 "KNH KNHItem" extends "Item List"
+pageextension 50301 "KNHItem" extends "Item List"
 {
     actions
     {
@@ -16,7 +16,7 @@ pageextension 50301 "KNH KNHItem" extends "Item List"
                 ApplicationArea = All;
                 Caption = 'Item Ledger Entry Analysis';
                 Tooltip = 'View list of records for items and their ledger entries';
-                RunObject = report "KNH ItemLedgerEntryAnalysis";
+                RunObject = report "KNHItemLedgerEntryAnalysis";
             }
         }
     }

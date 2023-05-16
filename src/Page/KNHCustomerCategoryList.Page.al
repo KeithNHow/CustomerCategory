@@ -1,10 +1,10 @@
 /// <summary>
 /// Page KNH Customer Category List (ID 50302)
 /// </summary>
-page 50302 "KNH CustomerCategoryList"
+page 50302 "KNHCustomerCategoryList"
 {
     PageType = List;
-    SourceTable = "KNH CustomerCategory";
+    SourceTable = "KNHCustomerCategory";
     UsageCategory = Lists;
     ApplicationArea = All;
     Caption = 'Customer Category List';
@@ -56,7 +56,7 @@ page 50302 "KNH CustomerCategoryList"
                 Caption = 'Create default category';
                 trigger OnAction();
                 var
-                    CustMgmt: Codeunit "KNH CustomerCategoryMgmt";
+                    CustMgmt: Codeunit "KNHCustomerCategoryMgmt";
                 begin
 
                     OnBeforeCreateDefaultCategoryAction(Rec); //Call Integration event
@@ -69,12 +69,12 @@ page 50302 "KNH CustomerCategoryList"
 
 
     [IntegrationEvent(true, false)]
-    local procedure OnBeforeCreateDefaultCategoryAction(var KNHCustomerCategory: Record "KNH CustomerCategory")
+    local procedure OnBeforeCreateDefaultCategoryAction(var KNHCustomerCategory: Record "KNHCustomerCategory")
     begin
     end;
 
     [IntegrationEvent(true, false)]
-    local procedure OnAfterCreateDefaultCategoryAction(var KNHCustomerCategory: Record "KNH CustomerCategory")
+    local procedure OnAfterCreateDefaultCategoryAction(var KNHCustomerCategory: Record "KNHCustomerCategory")
     begin
     end;
 

@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension KNH Customer List Extension (ID 50103) extends Record Customer List
 /// </summary>
-pageextension 50303 "KNH CustomerList" extends "Customer List"
+pageextension 50303 "KNHCustomerList" extends "Customer List"
 {
     actions
     {
@@ -19,7 +19,7 @@ pageextension 50303 "KNH CustomerList" extends "Customer List"
 
                 trigger OnAction()
                 var
-                    CustManagement: Codeunit "KNH CustomerCategoryMgmt";
+                    CustManagement: Codeunit "KNHCustomerCategoryMgmt";
                 begin
                     CustManagement.AssignDefaultCategory();
                 end;
@@ -36,7 +36,7 @@ pageextension 50303 "KNH CustomerList" extends "Customer List"
                 ApplicationArea = All;
                 Caption = 'Customer - Query Overview';
                 Tooltip = 'View list of records for customers and their ledger entries';
-                RunObject = query "KNH CustomerOverview";
+                RunObject = query "KNHCustomerOverview";
             }
         }
     }

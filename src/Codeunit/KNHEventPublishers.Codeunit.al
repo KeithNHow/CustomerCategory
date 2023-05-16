@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH Event Publishers (ID 50315).
 /// </summary>
-codeunit 50315 "KNH EventPublishers"
+codeunit 50315 "KNHEventPublishers"
 {
     /// <summary>
     /// OnAddrLineChanged called from Customer Card page, calls integration event in event subs codeunit

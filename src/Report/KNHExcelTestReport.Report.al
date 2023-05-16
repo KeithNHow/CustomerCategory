@@ -1,7 +1,7 @@
 /// <summary>
 /// Report Excel Test Report (ID 50302).
 /// </summary>
-report 50302 "KNH ExcelTestReport"
+report 50302 "KNHExcelTestReport"
 {
     ApplicationArea = Basic, Suite;
     Caption = 'Excel Test Report';
