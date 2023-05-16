@@ -5,10 +5,10 @@ query 50301 "KNHCustomerOverviewAPI"
 {
     APIGroup = 'keithCorp'; //Sets the group of the API endpoint the query is exposed in.
     APIPublisher = 'keithHow'; //Sets the publisher of the API endpoint the page is exposed in. 
-    APIVersion = 'v1.0'; //Sets the version(s) of the API endpoint the query is exposed in. 
-    Caption = 'Customer Balance';
-    EntityName = 'customer'; //Sets the singular entity name for exposed page in the API endpoint.
-    EntitySetName = 'customers';
+    APIVersion = 'v2.0'; //Sets the version(s) of the API endpoint the query is exposed in. 
+    Caption = 'Customer Overview';
+    EntityName = 'customerOverview'; //Sets the singular entity name for exposed page in the API endpoint.
+    EntitySetName = 'customersOverview';
     QueryType = API;
 
     elements
