@@ -35,7 +35,7 @@ codeunit 50320 "KNHCustomerCategoryMgmt"
     begin
         KNHCustomerCategory.SetRange(Default, true);
         if KNHCustomerCategory.FindFirst() then
-            if Customer.FindSet(true, true) then
+            if Customer.FindSet(true) then
                 repeat
                     Customer."KNH Customer Category Code" := KNHCustomerCategory.Code;
                     Customer.Modify();
