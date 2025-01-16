@@ -16,16 +16,16 @@ codeunit 50321 "KNHFreeGiftsMgmt"
     begin
         if (Rec.Type = Rec.Type::Item) and (Customer.Get(Rec."Sell-to Customer No.")) then
             if FreeGift.Get(Customer."KNH Customer Category Code", Rec."No.") and
-               (rec.Quantity > FreeGift.MinimumOrderQuantity)
+               (Rec.Quantity > FreeGift.MinimumOrderQuantity)
             then begin
-                OnBeforeFreeGiftSalesLineAdded(Rec); //call pub method
+                this.OnBeforeFreeGiftSalesLineAdded(Rec); //call pub method
                 SalesLine.Init();
                 SalesLine.TransferFields(Rec);
                 SalesLine."Line No." := Rec."Line No." + 10000;
                 SalesLine.Validate(Quantity, FreeGift.GiftQuantity);
                 SalesLine.Validate("Line Discount %", 100);
-                if SalesLine.Insert() then;
-                OnAfterFreeGiftSalesLineAdded(Rec, SalesLine); //call pub method
+                SalesLine.Insert();
+                this.OnAfterFreeGiftSalesLineAdded(Rec, SalesLine); //call pub method
             end;
     end;
 
