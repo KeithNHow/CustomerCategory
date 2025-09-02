@@ -7,7 +7,7 @@ codeunit 50321 "KNHFreeGiftsMgmt"
     /// Event Subs - Add free gift code after validation of Quatity field in Sales Line table, and raise integration events before and after inserting Sles Line 
     /// </summary>
     /// <param name="Rec"></param>
-    [EventSubscriber(ObjectType::Table, 37, 'OnAfterValidateEvent', 'Quantity', false, false)]
+    [EventSubscriber(ObjectType::Table, 37, OnAfterValidateEvent, 'Quantity', false, false)]
     local procedure AddFreeGift(var Rec: Record "Sales Line")
     var
         FreeGift: Record "KNHFreeGift";
@@ -48,7 +48,7 @@ codeunit 50321 "KNHFreeGiftsMgmt"
     /// <summary>
     /// Event Subs - Modify Customer Cat. in ILE from Cust. where Entry Type = Sale in ILE
     /// </summary>
-    [EventSubscriber(ObjectType::Table, 32, 'OnAfterInsertEvent', '', false, false)]
+    [EventSubscriber(ObjectType::Table, 32, OnAfterInsertEvent, '', false, false)]
     local procedure ModifyCustomerCategory(var Rec: Record "Item Ledger Entry")
     var
         Customer: Record Customer;

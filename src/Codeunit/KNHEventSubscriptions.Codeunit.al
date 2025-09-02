@@ -5,19 +5,19 @@ codeunit 50317 "KNHEventSubscriptions"
 {
     EventSubscriberInstance = staticAutomatic;
 
-    [EventSubscriber(ObjectType::codeunit, Codeunit::"Purch.-Post", 'OnBeforePostPurchaseDoc', '', false, false)]
+    [EventSubscriber(ObjectType::codeunit, Codeunit::"Purch.-Post", OnBeforePostPurchaseDoc, '', false, false)]
     local procedure TestBreakpoint1()
     begin
         Message('Breakpoint 1 found');
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, codeunit::"Purch.-Post", 'OnBeforePostLines', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, codeunit::"Purch.-Post", OnBeforePostLines, '', false, false)]
     local procedure TestBreakpoint2()
     begin
         Message('Breakpoint 2 found');
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purchase Batch Post Mgt.", 'OnAfterPreparePurchaseHeader', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purchase Batch Post Mgt.", OnAfterPreparePurchaseHeader, '', false, false)]
     local procedure TestBreakpoint3();
     begin
         Message('Breakpoint 3 found');
@@ -28,7 +28,7 @@ codeunit 50317 "KNHEventSubscriptions"
     /// CheckAddrLine called from publishers codeunit
     /// </summary>
     /// <param name="Line">Text[100].</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNHEventPublishers", 'OnAddrLineChanged', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNHEventPublishers", OnAddrLineChanged, '', true, true)]
     local procedure CheckAddrLineOnAddrLineChanged(Line: Text[100])
     var
         newLabelMsg: Label 'Cannot use a plus sign (+) in the address [';
@@ -41,7 +41,7 @@ codeunit 50317 "KNHEventSubscriptions"
     /// MinOrderQty called from publishers codeunit
     /// </summary>
     /// <param name="Qty">Decimal.</param>
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNHEventPublishers", 'MinOrderQty', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"KNHEventPublishers", MinOrderQty, '', true, true)]
     local procedure CustomerMinOrderQty(Qty: Decimal)
     var
         QtyMessageMsg: Label 'Sorry but a quantity of %1 is an insufficient quantity for a free gift.', Comment = '%1 = Quantity';
